@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-responsive.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="icon" href="/Iconos/7-sun.png">
+
+    <title>My weather</title>
+</head>
+
+<body onload="onLoad()">
+    <h1>My weather</h1>
+    
+    <div class="search-container">
+        <input type="search" placeholder="Search a city" id="input">
+        <button id="btn-search" class="btn-1" ><i class="material-icons icon-search">search</i></button>
+    </div>
+    
+
+    <div id="container">
+
+        <div class="container-left">
+
+                <div class="container-left-top">
+                        <div id="location"></div>
+
+                        <button type="submit" class="btn-1 btn-open-map visible"><i class="material-icons icon-map">map</i></button>
+                        
+                </div>
+
+
+                <div class="container-2">
+
+                        <div class="container-left-1">
+                                <img id="icon" src=""></img>
+                                
+                        </div>
+
+                        <div class="container-left-2">
+                                <div>
+                                    <span id="temperature"></span>
+                                    <label class="temperature"> °C</label>
+                                </div>
+
+                                <div class="feel-container">
+                                    <label class="feels-like">Feels like: </label><span id="feels_like"></span><span class="feels-like"> °C</span>
+                                </div>
+                        </div>
+
+                </div>
+
+                <div id="description"> </div>
+                
+
+
+        </div>
+            
+        <div class="container-right">
+                <div class="details">Details</div>
+
+
+                <div class="details-container">
+
+                <div>
+                    <img src="/Iconos/Icon-humidity2.png" alt="Humidity icon" class="icon-humidity"><label class="details-item">Humidity: </label><span id="humidity"></span><span class="details-item"> %</span>
+                </div>
+                <div>
+                    <img src="/Iconos/Icon-pressure.png" alt="Pressure icon" class="icon-wind"><label class="details-item">Pressure: </label><span id="pressure"></span><span class="details-item"> hPa</span>
+                </div>
+                <div>
+                    <img src="/Iconos/8-wind.png" alt="Wind icon" class="icon-wind"><label class="details-item">Wind: </label><span id="wind"></span><span class="details-item"> m/s</span>
+                </div>
+                <div>
+                    <img src="/Iconos/Icon-seaLevel.png" alt="Sea level icon" class="icon-sea"><label class="details-item">Sea level: </label><span id="sea_level"></span><span class="details-item"> m</span>
+                </div>
+
+
+                </div>
+
+        </div>
+        
+        
+    </div>
+    
+    
+    <div id="map" class="hidden" ></div>
+    
+    <button class="btn-1 btn-close-map hidden">X</button>
+ 
+
+
+    <script src="javascript.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+
+
+
+</body>
+</html>
+
+<!-- <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+ -->

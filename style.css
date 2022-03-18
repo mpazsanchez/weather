@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Roboto:wght@300;400&display=swap');
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: rgb(161,131,203);
+    background: linear-gradient(90deg, rgba(161,131,203,1) 0%, rgba(187,129,177,1) 0%, rgba(99,119,149,1) 28%, rgba(76,121,125,1) 52%, rgba(94,78,129,1) 85%, rgba(114,71,134,1) 100%, rgba(84,41,112,1) 100%);
+    color: white;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    margin-top: 0%;
+    font-size: 3vw;
+}
+
+#input {
+    width: 90%;
+    height: 7vh;
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    background-color: rgba(169, 166, 206, 0.26);
+    outline-color: rgba(101, 100, 155, 0.549);
+    color: white;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+::placeholder {
+    color: white;
+    font-weight: 100;
+    font-size: 0.8rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#input :focus {
+    outline: none;
+}
+
+
+.search-container {
+    width: 40%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+/* ---------- Map ---------- */
+#map {
+    height: 60vh;
+    width: 50%;
+    border-radius: 25px;
+    position: absolute;
+    top: 27%;
+    right: 27,5%;
+    bottom: 0;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+
+/* ---------- Buttons ---------- */
+.btn-1 {
+    background-color: #34009638;
+    border: none;
+    color: rgb(197, 178, 201);
+    font-weight: 800;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-1:hover {
+    color: #82c2cab4;
+}
+
+.btn-close-map {
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 85%;
+    background-color: rgb(199, 58, 58);
+}
+
+/* ---------- Container ---------- */
+#container {
+    border-radius: 50px;
+    width: 50%;
+    height: 50vh;
+    padding: 4vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(57, 21, 107, 0.493);
+    box-shadow: 0 8px 32px 0 #8588be5e;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+/*     border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+}
+
+
+/*Container left*/
+.container-left {
+    height: 52vh;
+    padding-right: 5%;
+
+}
+
+.container-left-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.container-2 {
+    display: flex;
+    margin: 2px;
+    margin-top: 5%;
+}
+
+
+.container-left-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#location {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#date {
+    font-size: 0.7rem;
+}
+
+#icon {
+    width: 23vh;
+    height: 23vh;
+    opacity: 0.4;
+    margin-right: 35px;
+    margin-bottom: 10%;
+}
+
+#temperature {
+    font-size: 2rem;
+}
+
+.feels-like, #feels_like {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+#description {
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-top: 10%;
+
+}
+
+
+/*Container right*/
+.container-right {
+    height: 52vh;
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(169, 166, 206, 0.26);
+ /*    border: solid rgb(179, 177, 199) 1px; */
+    border-radius: 25px;
+}
+
+.temperature, #temperature {
+    font-size: 2.4rem;
+}
+
+
+/*Details*/
+.details {
+    width: 50%;
+    padding: 5%;
+    font-weight: 500;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 10%;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.233);
+    letter-spacing: 1px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+}
+
+#humidity, #wind, #sea_level, #pressure {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.details-item {
+    font-size: 0.9rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    
+}
+
+/*Details-icons*/
+.icon-humidity, .icon-wind, .icon-pressure, .icon-sea {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+    margin-left: 10px;
+}
+
+
+
