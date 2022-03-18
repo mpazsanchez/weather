@@ -1,4 +1,4 @@
-# My Weather #
+# My weather - Javascript 
 - Proyecto desarrollado en Javascript puro, sin frameworks.
 - Se puede acceder a la ubicación actual o buscar cualquier ciudad del mundo, para luego mostrar su correspondiente información climática y ubicación en un mapa.
 
