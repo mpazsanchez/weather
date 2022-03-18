@@ -7,3 +7,7 @@
 - Fuentes de datos: 
     - API: Open Weather map
     - Mapa: Google maps
+
+![Vista desktop](https://github.com/mpazsanchez/weather/blob/main/Vista-desktop.jpg)
+![Vista tablet/ipad](https://github.com/mpazsanchez/weather/blob/main/Vista-ipad.jpg)
+![Vista mobile](https://github.com/mpazsanchez/weather/blob/main/Vista-mobile.jpg)
