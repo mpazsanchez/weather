@@ -12,4 +12,3 @@
 ![Vista tablet/ipad](https://github.com/mpazsanchez/weather/blob/main/Vista-ipad.jpg)
 ![Vista mobile](https://github.com/mpazsanchez/weather/blob/main/Vista-mobile.jpg)
 
-## Esta aplicación fue desarrollada principalmente para poner en práctica el uso de APIs, mapas y geolocalización, por lo cual no se le dio la debida atención a la interfaz, y ésta carece de diseño y detalles.
